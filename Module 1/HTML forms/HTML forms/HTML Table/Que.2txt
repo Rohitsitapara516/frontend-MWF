@@ -1,0 +1,57 @@
+2: What is the difference between colspan and rowspan in tables? Provide
+example
+
+<...In HTML tables, colspan and rowspan are attributes used with the <td> and <th> elements to control how many columns or rows a cell should span. They allow for more complex table layouts by merging cells either horizontally or vertically.
+
+1. colspan
+Definition: The colspan attribute specifies the number of columns a cell should span across. It allows a single cell to extend horizontally across multiple columns.
+Usage: This is useful when you want to create a header that covers several columns or when you want to combine cells for layout purposes.
+Example of colspan
+html
+
+Example
+<table border="1">
+    <tr>
+        <th colspan="3">Student Information</th>
+    </tr>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+    </tr>
+    <tr>
+        <td>John Doe</td>
+        <td>30</td>
+        <td>New York</td>
+    </tr>
+</table>
+In this example, the header "Student Information" spans across three columns due to the colspan="3" attribute.
+
+2. rowspan
+Definition: The rowspan attribute specifies the number of rows a cell should span. It allows a single cell to extend vertically across multiple rows.
+Usage: This is useful when you want to combine cells in a column for layout purposes or to indicate that a particular piece of data applies to multiple rows.
+Example of rowspan
+html
+
+Example
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+    </tr>
+    <tr>
+        <td rowspan="2">John Doe</td>
+        <td>30</td>
+        <td>New York</td>
+    </tr>
+    <tr>
+        <td>31</td>
+        <td>Los Angeles</td>
+    </tr>
+</table>
+In this example, the cell containing "John Doe" spans two rows due to the rowspan="2" attribute. This indicates that the same name applies to both rows.
+...>
+
+
+

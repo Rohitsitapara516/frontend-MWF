@@ -1,0 +1,27 @@
+ 2.Explain the basic structure of an HTML document. Identify the mandatory tags andtheir purposes
+
+<...The basic structure of an HTML document consists of several key elements that define the document's content and structure. Below is a breakdown of the essential components and mandatory tags in an HTML document:
+
+Mandatory Tags and Their Purposes
+
+    1.<!DOCTYPE html>:
+        Purpose: This declaration defines the document type and version of HTML being used. It helps the browser render the page correctly. In this case, it indicates that the document is an HTML5 document.
+
+    2.<html>:
+        Purpose: This tag is the root element of an HTML document. It wraps all the content on the page and can include attributes like lang to specify the language of the document.
+
+    3.<head>:
+        Purpose: The <head> section contains meta-information about the document, such as its title, character set, and links to stylesheets or scripts. It does not display content directly on the web page.
+
+    4.<meta charset="UTF-8">:
+        Purpose: This tag specifies the character encoding for the document. UTF-8 is a widely used encoding that supports many characters from different languages.
+
+    5.<meta name="viewport" content="width=device-width, initial-scale=1.0">:
+        Purpose: This tag is important for responsive web design. It controls the layout on mobile browsers by setting the viewport width to the device's width and the initial zoom level.
+
+    6.<title>:
+        Purpose: The <title> tag defines the title of the document, which is displayed in the browser's title bar or tab. It is also used by search engines to understand the content of the page.
+    
+    7.<body> :  Purpose: The <body> section contains the content of the document that is displayed to users, such as text, images, links, and other media. This is where the main content of the web page resides.
+
+    ...> 

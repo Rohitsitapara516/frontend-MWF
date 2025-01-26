@@ -1,0 +1,29 @@
+2: Explain the difference between the GET and POST methods in form submission.
+When should each be used?
+
+<...The GET and POST methods are two of the most commonly used HTTP methods for submitting forms in web applications. They differ in how they send data to the server and in their intended use cases.
+
+1.GET Method
+Data Transmission: The GET method appends form data to the URL in the form of a query string. For example, if a user submits a form with the fields name and age, the URL might look like this: http://example.com/form?name=John&age=30.
+
+1.Visibility: Since the data is included in the URL, it is visible to the user and can be bookmarked or shared. This makes GET suitable for requests that do not change server state.
+
+2.Data Length Limit: URLs have length limitations (typically around 2000 characters), which restricts the amount of data that can be sent using GET.
+
+3.Caching: GET requests can be cached by browsers, which can improve performance for repeated requests.
+
+4.Use Cases: GET is typically used for retrieving data or when the action is idempotent (i.e., it does not change the state of the server). Common use cases include:
+
+
+2.POST Method
+1.Data Transmission: The POST method sends form data in the body of the HTTP request, not in the URL. This means that the data is not visible in the URL.
+
+2.Visibility: Since the data is sent in the request body, it is not visible in the URL, making POST more suitable for sensitive information (like passwords).
+
+3.Data Length Limit: POST does not have the same length limitations as GET, allowing for larger amounts of data to be sent.
+
+4.Caching: POST requests are generally not cached by browsers, which is appropriate for actions that change server state.
+
+5.Use Cases: POST is typically used for actions that modify server state or when submitting sensitive data. Common use cases include:
+
+....>
