@@ -1,0 +1,96 @@
+<!-- Create a product catalog table that includes the following columns:
+ Product Name
+ Product Image (use placeholder image URLs)
+ Price
+ Description
+ Availability (in stock, out of stock)
+Additional Requirements:
+ Use thead for the table header.
+ Add a border and some basic styling using inline CSS.
+ Use colspan or rowspan to merge cells where applicable. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+</head>
+<style>
+    body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        border: 2px solid #ccc;
+    }
+    
+    th,
+    td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+    }
+    
+    th {
+        background-color: #f2f2f2;
+    }
+    
+    img {
+        max-width: 100px;
+        /* Limit image width */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+</style>
+
+<body>
+
+    <h2>Product Catalog</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product Image</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Availability</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>laptop</td>
+                <td><img src="https://images.app.goo.gl/QSBpEPss7Rn8CivWA" alt="laptop" /></td>
+                <td>50000</td>
+                <td>This is a great product.</td>
+                <td>In Stock</td>
+            </tr>
+            <tr>
+                <td>mouse </td>
+                <td><img src="https://images.app.goo.gl/seZy1nNrQU5NF82XA" alt="mouse" /></td>
+                <td>1500</td>
+                <td>This product is even better!</td>
+                <td>Out of Stock</td>
+            </tr>
+            <tr>
+                <td>phone </td>
+                <td><img src="https://images.app.goo.gl/qQGyT5gq8P4jk5LNA" alt="phone" /></td>
+                <td>15000</td>
+                <td>A must-have item!</td>
+                <td>In Stock</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: center;">Special Offer</td>
+                <td>In Stock</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

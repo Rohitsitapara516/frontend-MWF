@@ -1,0 +1,30 @@
+2: Explain the difference between the GET and POST methods in form submission.
+When should each be used?
+
+<...GET Method
+
+Characteristics:
+Data Transmission: Data is appended to the URL as query parameters. For example, if a form submits a username and password, the URL might look like this: http://example.com/login?username=user&password=pass.
+Visibility: The data sent via GET is visible in the URL, which can be bookmarked or shared. This makes it less secure for sensitive information (like passwords).
+Data Length: There is a limit to the amount of data that can be sent using GET, typically around 2048 characters, depending on the browser and server.
+Caching: GET requests can be cached by browsers, which can improve performance for repeated requests.
+
+When to Use GET:
+When retrieving data from the server without causing any side effects (e.g., searching, filtering, or displaying information).
+When the data is not sensitive and can be safely included in the URL.
+When you want the request to be bookmarkable or shareable.
+
+POST Method
+
+Characteristics:
+Data Transmission: Data is sent in the body of the HTTP request, not in the URL. This means the data is not visible in the URL.
+Visibility: The data sent via POST is not displayed in the URL, making it more secure for transmitting sensitive information.
+Data Length: There is no strict limit on the amount of data that can be sent using POST, allowing for larger payloads.
+Caching: POST requests are generally not cached by browsers.
+
+When to Use POST:
+When submitting data that modifies the server state (e.g., creating, updating, or deleting resources).
+When sending sensitive information (e.g., passwords, personal data) that should not be exposed in the URL.
+When the amount of data being sent is large or complex.
+
+...>
