@@ -1,0 +1,28 @@
+ 2: What are the additional tags used in HTML5?
+
+
+ <....
+ New Semantic Elements
+1.<header>: Represents introductory content or a set of navigational links. Typically contains headings, logos, or other introductory content.
+
+2.<footer>: Represents the footer for a section or page, usually containing information about the author, copyright, or links to related documents.
+
+3.<article>: Represents a self-contained piece of content that could be distributed independently, such as a news article, blog post, or forum post.
+
+4.<section>: Represents a thematic grouping of content, typically with a heading. It is used to divide content into sections.
+
+5.<nav>: Represents a section of navigation links, helping to define the navigation structure of the document.
+
+6.<aside>: Represents content that is tangentially related to the content around it, such as sidebars, pull quotes, or advertisements.
+
+7.<figure>: Represents self-contained content, such as images, diagrams, or illustrations, along with an optional caption (<figcaption>).
+
+8.<figcaption>: Represents a caption or legend for the content of a <figure> element.
+
+
+Multimedia Elements
+1.<audio>: Used to embed sound content in documents, allowing for audio playback without the need for plugins.
+
+2.<video>: Used to embed video content in documents, allowing for video playback without the need for plugins.
+
+3.<track>: Used within the <video> and <audio> elements to specify text tracks (such as subtitles or captions).

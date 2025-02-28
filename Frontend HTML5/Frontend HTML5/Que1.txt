@@ -1,0 +1,34 @@
+1: Difference b/w HTML & HTML5?
+
+<....HTML (HyperText Markup Language) and HTML5 are both markup languages used for creating and structuring content on the web. However, HTML5 is the latest version of HTML and comes with several enhancements and new features. Here are some key differences between HTML and HTML5:
+
+1.Doctype Declaration:
+HTML: The doctype declaration is longer and more complex (e.g., <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">).
+HTML5: The doctype is simplified to <!DOCTYPE html>.
+
+2.New Semantic Elements:
+HTML5 introduces new semantic elements that provide better structure and meaning to web pages, such as <header>, <footer>, <article>, <section>, <nav>, and <aside>. These elements help improve accessibility and SEO.
+
+3.Multimedia Support:
+HTML5 includes native support for audio and video embedding with the <audio> and <video> tags, eliminating the need for third-party plugins like Flash.
+
+4.Form Enhancements:
+HTML5 introduces new input types (e.g., date, email, url, range, etc.) and attributes (e.g., placeholder, autofocus, required) that enhance form functionality and user experience.
+
+5.Canvas and SVG:
+HTML5 provides the <canvas> element for drawing graphics on the fly using JavaScript, as well as better support for Scalable Vector Graphics (SVG).
+
+6.APIs and Features:
+HTML5 includes several new APIs for enhanced functionality, such as the Geolocation API, Web Storage (localStorage and sessionStorage), Web Workers, and the Offline Web Application API.
+
+7.Deprecated Elements and Attributes:
+Some elements and attributes that were present in earlier versions of HTML have been deprecated in HTML5, such as <font>, <center>, and <marquee>, in favor of CSS for styling.
+
+8.Improved Parsing Rules:
+HTML5 has more forgiving parsing rules, which means that browsers can handle errors in markup more gracefully, leading to better cross-browser compatibility.
+
+9.Accessibility:
+HTML5 emphasizes better accessibility features, making it easier for assistive technologies to interpret web content.
+
+
+......>
