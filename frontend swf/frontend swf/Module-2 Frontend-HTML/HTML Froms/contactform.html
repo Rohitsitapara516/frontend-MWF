@@ -1,0 +1,97 @@
+<!-- Create a contact form with the following fields:
+ Full name (text input)
+ Email (email input)
+ Phone number (tel input)
+ Subject (dropdown menu)
+ Message (textarea)
+ Submit button
+Additional Requirements:
+ Use appropriate form validation using required, minlength, maxlength, and pattern.
+ Link form labels with their corresponding inputs using the for attribute. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    h2:hover {
+        color: #218838;
+    }
+    
+    form {
+        max-width: 400px;
+        margin: auto;
+        border: 5px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input,
+    select,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    button {
+        padding: 10px 15px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #218838;
+    }
+</style>
+
+<body>
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required minlength="2" maxlength="50" pattern="[A-Za-z\s]+" title="Please enter a valid name (letters and spaces only).">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required pattern="\d{10}" title="Please enter a valid 10-digit phone number.">
+
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject" required>
+        <option value="">Select a subject</option>
+        <option value="general">General Inquiry</option>
+        <option value="support">Support</option>
+        <option value="feedback">Feedback</option>
+        <option value="other">Other</option>
+    </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required minlength="10" maxlength="500" rows="5" placeholder="Your message here..."></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>

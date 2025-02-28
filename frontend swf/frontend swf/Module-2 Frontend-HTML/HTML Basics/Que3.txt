@@ -1,0 +1,40 @@
+3:What is the difference between block-level elements and inline elements in
+HTML? Provide examples of each
+
+<...1.Block-Level Elements
+Definition: Block-level elements take up the full width available (by default) and start on a new line. They create a "block" of content, which means that they can contain other block-level elements and inline elements.
+
+Characteristics:
+
+Start on a new line.
+Take up the full width of their parent container.
+Can contain other block-level and inline elements.
+Examples:
+
+<div>: A generic container for grouping content.
+<h1>, <h2>, <h3>, <h4>, <h5>, <h6>: Headings of different levels.
+<p>: Paragraphs of text.
+<ul>, <ol>: Unordered and ordered lists, respectively.
+<blockquote>: A section that is quoted from another source.
+<section>: A thematic grouping of content.
+<article>: A self-contained composition in a document.
+
+2.Inline Elements
+Definition: Inline elements do not start on a new line and only take up as much width as necessary. They are typically used to format a small portion of text or to include small elements within a block of text.
+
+Characteristics:
+
+Do not start on a new line.
+Only take up as much width as their content requires.
+Cannot contain block-level elements (but can contain other inline elements).
+Examples:
+
+<span>: A generic inline container for text.
+<a>: Anchor tag for hyperlinks.
+<strong>: Indicates strong importance, typically displayed as bold text.
+<em>: Indicates emphasized text, typically displayed as italicized text.
+<img>: Embeds an image.
+<br>: Inserts a line break.
+<code>: Represents a fragment of computer code.
+
+...>

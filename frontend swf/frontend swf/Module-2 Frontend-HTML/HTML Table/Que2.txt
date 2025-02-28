@@ -1,0 +1,15 @@
+2: What is the difference between colspan and rowspan in tables? Provide
+examples.
+
+<...In HTML tables, colspan and rowspan are attributes used with the <td> (table data) and <th> (table header) elements to control how many columns or rows a cell should span. Here’s a detailed explanation of each, along with examples:
+
+1. colspan
+Definition: The colspan attribute specifies the number of columns a cell should span across. This allows a single cell to extend horizontally across multiple columns.
+
+Usage: It is useful for creating headers or cells that need to encompass multiple columns of data.
+
+
+2. rowspan
+Definition: The rowspan attribute specifies the number of rows a cell should span vertically. This allows a single cell to extend across multiple rows.
+
+Usage: It is useful for creating cells that need to represent data that applies to multiple rows.

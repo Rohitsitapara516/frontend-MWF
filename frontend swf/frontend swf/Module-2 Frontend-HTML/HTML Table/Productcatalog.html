@@ -1,0 +1,93 @@
+<!-- Create a product catalog table that includes the following columns:
+ Product Name
+ Product Image (use placeholder image URLs)
+ Price
+ Description
+ Availability (in stock, out of stock)
+Additional Requirements:
+ Use thead for the table header.
+ Add a border and some basic styling using inline CSS.
+ Use colspan or rowspan to merge cells where applicable. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+</head>
+<style>
+    body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        border: 2px solid #ccc;
+    }
+    
+    td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+    }
+    
+    th {
+        background-color: #f2f2f2;
+    }
+    
+    img {
+        max-width: 200px;
+        height: auto;
+    }
+</style>
+
+<body>
+
+    <h2>Product Catalog</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product Image</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Availability</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>laptop</td>
+                <td><img src="pexels-photo-303383.jpeg" alt="laptop" /></td>
+                <td>50000</td>
+                <td>This is a great product.</td>
+                <td>In Stock</td>
+            </tr>
+            <tr>
+                <td>mouse </td>
+                <td><img src="N500-black-3-e1681396443858-1024x791.png" alt="mouse" /></td>
+                <td>1500</td>
+                <td>This product is even better!</td>
+                <td>Out of Stock</td>
+            </tr>
+            <tr>
+                <td>phone </td>
+                <td><img src="gettyimages-1299655280-612x612.jpg" alt="phone" /></td>
+                <td>15000</td>
+                <td>A must-have item!</td>
+                <td>In Stock</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: center;">Special Offer</td>
+                <td>In Stock</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
