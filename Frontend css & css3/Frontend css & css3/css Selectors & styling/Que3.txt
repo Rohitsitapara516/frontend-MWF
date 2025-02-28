@@ -1,0 +1,42 @@
+3: What is the difference between internal, external, and inline CSS? Discuss the
+advantages and disadvantages of each approach.
+
+<...1. Internal CSS
+Definition: Internal CSS is defined within the <style> tag in the <head> section of an HTML document. It applies styles to the entire document.
+
+Advantages:
+
+1.Convenience: Easy to use for small projects or single-page applications since all styles are in one place.
+2.No additional files: No need to manage separate CSS files, which simplifies the project structure for small projects.
+
+Disadvantages:
+
+1.Limited Reusability: Styles defined in internal CSS cannot be reused across multiple pages without copying the styles to each page.
+2.Increased Load Time: For larger projects, having styles in each HTML file can increase load times since the styles are repeated in every document.
+
+
+1. Internal CSS
+Definition: Internal CSS is defined within the <style> tag in the <head> section of an HTML document. It applies styles to the entire document.
+
+Advantages:
+
+1.Convenience: Easy to use for small projects or single-page applications since all styles are in one place.
+2.No additional files: No need to manage separate CSS files, which simplifies the project structure for small projects.
+Disadvantages:
+
+1.Limited Reusability: Styles defined in internal CSS cannot be reused across multiple pages without copying the styles to each page.
+2.Increased Load Time: For larger projects, having styles in each HTML file can increase load times since the styles are repeated in every document.
+
+2. External CSS
+Definition: External CSS is defined in a separate .css file, which is linked to the HTML document using the <link> tag in the <head> section.
+
+Advantages:
+
+1.Reusability: The same CSS file can be linked to multiple HTML documents, promoting consistency and reducing redundancy.
+2.Separation of Concerns: Keeps HTML and CSS separate, making the code cleaner and easier to maintain.
+3.Caching: Browsers can cache external CSS files, which can improve load times for returning visitors.
+Disadvantages:
+
+1.Additional HTTP Request: Each external CSS file requires an additional HTTP request, which can slow down page loading if not managed properly.
+2.Dependency: If the CSS file is not loaded (e.g., due to a broken link), the styles will not be applied.
+...>

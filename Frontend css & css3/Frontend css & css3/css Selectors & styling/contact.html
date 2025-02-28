@@ -1,0 +1,93 @@
+<!-- Style the contact form (created in the HTML Forms lab) using external CSS. Thefollowing should be
+implemented:
+ Change the background color of the form.
+ Add padding and margins to form fields.
+ Style the submit button with a hover effect.
+ Use class selectors for styling common elements and ID selectors for uniqueelements. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<style>
+    body {
+        margin: 0;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    .form-container {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        margin: auto;
+    }
+    
+    .form-field {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .submit-button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    .submit-button:hover {
+        background-color: #45a049;
+    }
+</style>
+
+<body>
+    <div class="form-container">
+        <h1>Contact Us</h1>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="form-field" required>
+
+            <label for="phone">phone:</label>
+            <input type="text" id="phone" class="form-field" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="form-field" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" class="form-field" rows="4" required></textarea>
+
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </div>
+</body>
+
+</html>

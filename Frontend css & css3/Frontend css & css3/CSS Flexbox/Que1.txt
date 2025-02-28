@@ -1,0 +1,20 @@
+1 : What is CSS Flexbox,: What is CSS Flexbox, and how is it useful for layout design? Explain the terms
+flex-container and flex-item.
+? Explain the terms
+flex-container and flex-item.
+
+<.... What is CSS Flexbox : What is CSS Flexbox, and how is it useful for layout design? 
+CSS Flexbox, or the Flexible Box Layout, is a layout model in CSS that provides a more efficient way to design complex layouts and align items within a container. It allows for responsive design by enabling items to adjust and distribute space within a container, even when their size is unknown or dynamic. Flexbox is particularly useful for creating one-dimensional layouts, either in a row or a column, making it easier to align and distribute space among items.
+
+
+Explain the terms flex-container and flex-item.
+
+1.Flex Container:
+The flex container is the parent element that holds the flex items. To create a flex container, you apply the display: flex; or display: inline-flex; property to an element. This establishes a new flex formatting context for its direct children (the flex items).
+The flex container controls the layout of its children, allowing for properties that define how the items are aligned, spaced, and ordered.
+
+2.Flex Items:
+Flex items are the direct children of a flex container. These items can be any HTML elements, such as <div>, <span>, or <p>.
+Flex items can be manipulated using various flex properties to control their size, alignment, and order within the flex container. Some common properties include flex-grow, flex-shrink, and flex-basis, which determine how items grow or shrink to fill available space
+
+...>

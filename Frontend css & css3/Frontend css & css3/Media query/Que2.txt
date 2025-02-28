@@ -1,0 +1,8 @@
+2:Write a basic media query that adjusts the font size of a webpage for screens
+smaller than 600px
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Adjust the font size as needed */
+    }
+}

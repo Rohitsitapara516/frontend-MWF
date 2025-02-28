@@ -1,0 +1,19 @@
+2.What is the difference between border-box and content-box box-sizing inCSS?
+Which is the default?
+
+<...1. content-box
+Definition: This is the default value for the box-sizing property. When an element is set to content-box, the width and height you specify for the element apply only to the content area. Padding and borders are added to the specified width and height.
+Calculation:
+Total Width = Content Width + Padding Left + Padding Right + Border Left + Border Right
+Total Height = Content Height + Padding Top + Padding Bottom + Border Top + Border Bottom
+Example: If you set an element's width to 200px, padding to 20px, and a border of 5px, the total width will be:
+Total Width = 200px (content) + 20px (left padding) + 20px (right padding) + 5px (left border) + 5px (right border) = 250px.
+
+2. border-box
+Definition: When an element is set to border-box, the width and height you specify include the content, padding, and border. This means that the total size of the element will not exceed the specified width and height.
+Calculation:
+Total Width = Specified Width (includes content, padding, and border)
+Total Height = Specified Height (includes content, padding, and border)
+Example: If you set an element's width to 200px, padding to 20px, and a border of 5px, the total width will still be 200px. The content area will be calculated as:
+Content Width = 200px - 20px (left padding) - 20px (right padding) - 5px (left border) - 5px (right border) = 150px.
+...>

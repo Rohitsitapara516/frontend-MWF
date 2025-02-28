@@ -1,0 +1,35 @@
+ 2: Describe the properties justify-content, align-items, and flexdirection used in Flexbox
+
+ <...1. justify-content
+The justify-content property is used to align flex items along the main axis of the flex container. The main axis is determined by the flex-direction property (which can be either horizontal or vertical). This property helps distribute space between and around flex items.
+
+Possible Values:
+
+flex-start: Aligns items to the start of the flex container (default).
+flex-end: Aligns items to the end of the flex container.
+center: Centers items along the main axis.
+space-between: Distributes items evenly, with the first item at the start and the last item at the end, leaving equal space between the items.
+space-around: Distributes items evenly, with equal space around each item. The space before the first item and after the last item is half the size of the space between items.
+space-evenly: Distributes items evenly, with equal space between all items, including the space before the first item and after the last item.
+
+2. align-items
+The align-items property is used to align flex items along the cross axis of the flex container. The cross axis is perpendicular to the main axis and is also determined by the flex-direction property. This property controls how items are aligned vertically (if the main axis is horizontal) or horizontally (if the main axis is vertical).
+
+Possible Values:
+
+flex-start: Aligns items to the start of the cross axis.
+flex-end: Aligns items to the end of the cross axis.
+center: Centers items along the cross axis.
+baseline: Aligns items along their baseline.
+stretch: Stretches items to fill the container (default behavior)
+
+3. flex-direction
+The flex-direction property defines the direction in which flex items are placed in the flex container. It establishes the main axis and determines how the items are laid out.
+
+Possible Values:
+
+row: Items are placed in a row (default). The main axis runs horizontally from left to right.
+row-reverse: Items are placed in a row, but in reverse order (right to left).
+column: Items are placed in a column. The main axis runs vertically from top to bottom.
+column-reverse: Items are placed in a column, but in reverse order (bottom to top).
+<....

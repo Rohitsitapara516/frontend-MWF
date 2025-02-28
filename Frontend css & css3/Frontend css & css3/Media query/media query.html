@@ -1,0 +1,240 @@
+<!-- Build a responsive webpage that includes:
+ A navigation bar.
+ A content section with two columns.
+ A footer.
+Additional Requirements:
+ Use media queries to make the webpage responsive for mobile devices.
+ On smaller screens (below 768px), stack the columns vertically.
+ Adjust the font sizes and padding to improve readability on mobile. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: lightgray;
+        overflow-x: hidden;
+    }
+    
+    .navbar {
+        height: 50%;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        top: 0;
+    }
+    
+    ul {
+        background-color: black;
+        padding: 35px 15px;
+        margin: 0;
+        padding: 0;
+        top: 0;
+    }
+    
+    ul li {
+        display: inline-block;
+        padding: 25px 35px;
+        top: 0;
+    }
+    
+    ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+    }
+    
+    .content {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    
+    .column {
+        flex: 1;
+        margin: 0px 20px;
+        padding: 20px;
+        background-color: aqua;
+        border-radius: 5px;
+    }
+    
+    .footer {
+        text-align: center;
+        padding: 0px 20px;
+        background: blue;
+        color: brown;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    /* mobile view */
+    
+    @media (max-width: 580) {
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: lightgray;
+            overflow-x: hidden;
+        }
+        .navbar {
+            height: 50%;
+            width: auto;
+            margin: 0;
+            padding: 0;
+            top: 0;
+        }
+        ul {
+            background-color: black;
+            padding: 35px 15px;
+            margin: 0;
+            padding: 0;
+            top: 0;
+        }
+        ul li {
+            display: inline-block;
+            padding: 25px 35px;
+            top: 0;
+        }
+        ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .column {
+            flex: 1;
+            margin: 0px 20px;
+            padding: 20px;
+            background-color: aqua;
+            border-radius: 5px;
+            align-items: center;
+        }
+        .footer {
+            text-align: center;
+            padding: 0px 20px;
+            background: blue;
+            color: brown;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    }
+    /* font size and padding adjust */
+    
+    @media (max-width: 768px) {
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: lightgray;
+            overflow-x: hidden;
+        }
+        .navbar {
+            height: 50%;
+            width: auto;
+            margin: 0;
+            padding: 0;
+            top: 0;
+        }
+        ul {
+            background-color: black;
+            padding: 10px 15px;
+            margin: 0;
+            padding: 0;
+            top: 0;
+        }
+        ul li {
+            display: inline-block;
+            padding: 25px 35px;
+            top: 0;
+        }
+        ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 10px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+        }
+        .column {
+            flex: 1;
+            margin: 0px 20px;
+            padding: 20px;
+            background-color: aqua;
+            border-radius: 5px;
+        }
+        .footer {
+            text-align: center;
+            padding: 0px 20px;
+            background: blue;
+            color: brown;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    }
+    /* smaller screem 768 */
+    
+    @media (max-width: 768px) {
+        .content {
+            flex-direction: column;
+        }
+        .column {
+            margin: 10px 0;
+            padding: 15px;
+        }
+        nav ul {
+            flex-direction: column;
+        }
+        nav ul li {
+            margin: 5px 0;
+        }
+        body {
+            font-size: 14px;
+        }
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">services</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="column left">
+            <h2>Left Column1</h2>
+            <p>This is the left column content</p>
+        </div>
+    </div>
+    <div class="column right">
+        <h2>right column2</h2>
+        <p>This is the right column content</p>
+    </div>
+
+    <footer class="footer">
+
+        <p>Media query</p>
+    </footer>
+
+</body>
+
+</html>

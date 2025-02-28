@@ -1,0 +1,99 @@
+<!-- Create a simple webpage layout using Flexbox. The layout should include:
+ A header.
+ A sidebar on the left.
+ A main content area in the center.
+ A footer.
+Additional Requirements:
+ Use Flexbox to position and align the elements.
+ Apply different justify-content and align-items properties to observe theireffects.
+ Ensure the layout is responsive, adjusting for smaller screens. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox layout</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    .header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .main-content {
+        display: flex;
+        flex: 1;
+    }
+    
+    .sidebar {
+        background-color: #ccc;
+        padding: 20px;
+        width: 200px;
+        position: relative;
+    }
+    
+    .content {
+        background-color: #fff;
+        padding: 20px;
+        flex: 1;
+    }
+    
+    .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    @media (max-width: 768px) {
+        .main-content {
+            flex-direction: column;
+        }
+        .sidebar {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>My Website</h1>
+        </header>
+        <div class="main-content">
+            <aside class="sidebar">
+                <h2>Sidebar</h2>
+            </aside>
+            <main class="content">
+                <h2>Main Content Area</h2>
+                <p>This is where the main content goes. You can add text, images, or any other elements here.</p>
+            </main>
+        </div>
+        <footer class="footer">
+            <p>&copy; 2025 My Website. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+ 1: What is a CSS selector? Provide examples of element, class, and ID selectors
+
+ <...What is a CSS selector?
+ A CSS selector is a pattern used to select the elements you want to style in your HTML document. Selectors can target elements based on their type, class, ID, attributes, and more. Here are the three basic types of selectors: element selectors, class selectors, and ID selectors.
+
+
+examples of element, class, and ID selectors
+
+1. Element Selector
+An element selector targets HTML elements by their tag name. It applies styles to all instances of that element in the document.
+
+Example:
+
+/* This will style all <p> elements */
+p {
+    color: blue; /* Text color will be blue */
+    font-size: 16px; /* Font size will be 16 pixels */
+}
+
+2. Class Selector
+A class selector targets elements with a specific class attribute. It is prefixed with a dot (.) and can be applied to multiple elements.
+
+Example:
+
+/* This will style all elements with the class "highlight" */
+.highlight {
+    background-color: yellow; /* Background color will be yellow */
+    font-weight: bold; /* Text will be bold */
+}
+
+3. ID Selector
+An ID selector targets a single element with a specific ID attribute. It is prefixed with a hash (#). Each ID must be unique within a page.
+
+Example:
+
+/* This will style the element with the ID "main-title" */
+#main-title {
+    font-size: 24px; /* Font size will be 24 pixels */
+    color: green; /* Text color will be green */
+}
+...>

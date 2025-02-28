@@ -1,0 +1,87 @@
+<!-- Create a profile card layout using the box model. The profile card shouldinclude:
+ A profile picture.
+ The user’s name and bio.
+ A button to "Follow" the user.
+Additional Requirements:
+ Add padding and borders to the elements.
+ Ensure the layout is clean and centered on the page using CSS margins.
+ Use the box-sizing property to demonstrate both content-box and border-box
+on different element -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            box-sizing: content-box;
+        }
+        
+        .profile-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 50px;
+            text-align: center;
+            width: 300px;
+            border: 20px;
+        }
+        
+        .profile-picture {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        
+        .user-name {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        
+        .bio {
+            font-size: 1em;
+            color: #666;
+            margin: 10px 0;
+        }
+        
+        .follow-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s
+        }
+        
+        .follow-button:hover {
+            background-color: #83b300c2;
+        }
+    </style>
+
+    <body>
+        <div class="profile-card">
+            <img src="images.jfif" alt="">
+            <h2 class="user-name">Rohit Sitapara</h2>
+            <p class="bio">frontend developer with a passion for creating beautiful and functional websites.</p>
+            <button class="follow-button">Follow</button>
+        </div>
+    </body>
+
+</html>
