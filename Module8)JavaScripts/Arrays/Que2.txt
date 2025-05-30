@@ -1,0 +1,60 @@
+ 2: Explain the methods push(), pop(), shift(), and unshift() used in arrays.
+
+<...
+
+In JavaScript, arrays come with several built-in methods that allow you to manipulate their contents easily. Four commonly used methods are push(), pop(), shift(), and unshift(). These methods are used to add or remove elements from the beginning or end of an array.
+
+1. push()
+The push() method adds one or more elements to the end of an array and returns the new length of the array.
+
+Syntax
+javascript
+array.push(element1, element2, ..., elementN);
+Example
+javascript
+let fruits = ["apple", "banana"];
+fruits.push("cherry");
+...
+In this example, "cherry" is added to the end of the fruits array.
+
+2. pop()
+The pop() method removes the last element from an array and returns that element. This method changes the length of the array.
+
+Syntax
+javascript
+let removedElement = array.pop();
+
+Example
+javascript
+let fruits = ["apple", "banana", "cherry"];
+let lastFruit = fruits.pop();
+...
+In this example, the last element "cherry" is removed from the fruits array, and the remaining elements are logged.
+
+3. shift()
+The shift() method removes the first element from an array and returns that element. This method also changes the length of the array.
+
+Syntax
+javascript
+let removedElement = array.shift();
+Example
+javascript
+let fruits = ["apple", "banana", "cherry"];
+let firstFruit = fruits.shift();
+
+In this example, the first element "apple" is removed from the fruits array.
+
+4. unshift()
+The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.
+
+Syntax
+javascript
+array.unshift(element1, element2, ..., elementN);
+Example
+javascript
+let fruits = ["banana", "cherry"];
+fruits.unshift("apple");
+
+In this example, "apple" is added to the beginning of the fruits array.
+
+<...

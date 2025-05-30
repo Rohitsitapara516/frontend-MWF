@@ -1,0 +1,47 @@
+2: Explain the methods getElementById(), getElementsByClassName(),and
+querySelector() used to select elements from the DOM.
+
+<...
+
+
+
+1. getElementById()
+Purpose: This method is used to select a single element from the DOM based on its unique id attribute.
+Syntax:
+javascript
+const element = document.getElementById("elementId");
+Return Value: It returns the first element that matches the specified id. If no element with the given id exists, it returns null.
+Usage: Since id attributes are unique within a document, this method is efficient for selecting a specific element.
+Example:
+
+html
+<div id="myDiv">Hello, World!</div>
+<script>
+...
+2. getElementsByClassName()
+Purpose: This method is used to select all elements that have a specific class name.
+Syntax:
+javascript
+const elements = document.getElementsByClassName("className");
+Return Value: It returns a live HTMLCollection of elements with the specified class name. If no elements are found, it returns an empty collection.
+Usage: Since it returns a collection, you can access individual elements using array-like indexing (e.g., elements[0]).
+Example:
+
+html
+<div class="myClass">Element 1</div>
+<div class="myClass">Element 2</div>
+...
+3. querySelector()
+Purpose: This method is used to select the first element that matches a specified CSS selector.
+Syntax:
+const element = document.querySelector("selector");
+Return Value: It returns the first matching element or null if no matches are found.
+Usage: This method is very versatile because it allows you to use any valid CSS selector, including class names, IDs, attributes, and more.
+Example:
+
+html
+<div class="myClass">Element 1</div>
+<div id="myDiv">Element 2</div>
+...
+
+...>

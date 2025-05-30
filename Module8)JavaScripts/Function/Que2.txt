@@ -1,0 +1,45 @@
+ 2: What is the difference between a function declaration and a function expression?
+
+<...
+
+In JavaScript, both function declarations and function expressions are used to define functions, but they have some key differences in terms of syntax, hoisting behavior, and how they are used. Here’s a detailed comparison:
+
+1. Syntax
+Function Declaration: A function declaration defines a named function using the function keyword followed by the function name and parentheses. The function body is enclosed in curly braces.
+
+Syntax:
+
+javascript
+function functionName(parameters) 
+Function Expression: A function expression defines a function as part of an expression. It can be anonymous (without a name) or named, and it is often assigned to a variable.
+
+Syntax:
+
+javascript
+const functionName = function(parameters) 
+...
+2. Hoisting
+Function Declaration: Function declarations are hoisted to the top of their containing scope. This means you can call the function before it is defined in the code.
+
+Example:
+
+javascript
+console.log(add(2, 3)); 
+Function Expression: Function expressions are not hoisted in the same way. The variable that holds the function is hoisted, but the function itself is not available until the expression is evaluated. Therefore, calling a function expression before its definition will result in an error.
+
+Example:
+
+javascript
+console.log(multiply(2, 3)); // Output: TypeError: multiply is not a function
+...
+3. Usage
+Function Declaration: Function declarations are typically used when you want to define a function that can be called from anywhere in the scope, including before its definition.
+
+Function Expression: Function expressions are often used when you want to create a function that is only available within a specific context, such as within another function or as a callback. They are also commonly used with higher-order functions.
+
+4. Named vs. Anonymous
+Function Declaration: Always has a name (the function name).
+
+Function Expression: Can be anonymous (without a name) or named. Named function expressions can be useful for recursion or debugging.
+
+<...

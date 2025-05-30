@@ -1,0 +1,87 @@
+  2: Explain how to access and update object properties using dot notation and
+bracket notation.
+
+<...
+
+There are multiple ways to access object properties in JavaScript. But two common ones are dot notation and bracket notation.
+
+I'll explain the difference between these two approaches in this article.
+
+With dot and bracket notation, you can:
+
+access the value of a property by its key
+modify the value of an existing property by its key and
+add a new property to an object
+But these two ways access properties differently, and there are different scenarios when one is better than the other.
+
+Dot Notation Property Accessor
+The Dot Notation approach involves using a dot or period (.) and a key to access a property. Here's the syntax:
+
+object.key
+You have the dot then the key of the property you want to access. This expression will return the value of the property. Let's see an example:
+
+const obj = {
+  name: "deeecode",
+  age: 80,
+  language: "javascript",
+}
+
+const target = obj.name
+// deeecode
+By using dot and the name key, .name, we get "deeecode" which is the value of the name property.
+
+You can also use this notation to modify an existing property:
+
+const obj = {
+  name: "deeecode",
+  age: 80,
+  language: "javascript",
+}
+
+obj.age = 100
+
+console.log(obj)
+// {
+//   name: "deeecode",
+//   age: 100,
+//   language: "javascript"
+// }
+Here, we modify the age property.
+
+Also, you can add a new property using this approach:
+
+const obj = {
+  name: "deeecode",
+  age: 80,
+  language: "javascript",
+}
+
+obj.location = "Mercury"
+
+console.log(obj)
+// {
+//   name: "deeecode",
+//   age: 80,
+//   language: "javascript",
+//   location: "Mercury"
+// }
+Here, we add the location property.
+
+But this approach has limitations which we'll look at soon. Next, let's understand how the bracket notation approach works.
+
+Here's a video version for this topic if you're interested.
+
+Bracket Notation Property Accessor
+The Bracket Notation approach involves using square brackets, in which you have an expression that evaluates to a value. That value serves as a key for accessing the property. Here's the syntax:
+
+object[expression]
+The expression within the brackets evaluates to a key for the property you want to access, and this expression will return the value of the property. Let's see an example:
+
+const obj = {
+  name: "deeecode",
+  age: 80,
+  language: "javascript",
+}
+
+const target = obj["name"]
+By using square brackets and a "name" string expression, ["name"], we get "deeecode" which is the value of the name property.

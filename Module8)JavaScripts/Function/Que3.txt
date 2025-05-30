@@ -1,0 +1,18 @@
+ 3: Discuss the concept of parameters and return values in functions.
+
+<...
+
+Parameters are variables that are defined in the function declaration and act as placeholders for the values (arguments) that will be passed to the function when it is called. They allow functions to accept input and operate on that input.
+
+
+
+Importance of Parameters and Return Values
+Modularity: Parameters allow functions to be more modular and reusable. You can use the same function with different inputs to achieve different results.
+
+Abstraction: Functions can abstract complex operations. By using parameters, you can hide the implementation details and expose a simple interface.
+
+Data Processing: Functions can process data based on the parameters provided and return results, making it easier to manage and manipulate data.
+
+Control Flow: Return values can influence the flow of a program. For example, you can use return values in conditional statements to determine the next steps in your code.
+
+<...

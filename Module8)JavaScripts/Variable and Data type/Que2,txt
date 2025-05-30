@@ -1,0 +1,37 @@
+ 2: Explain the different data types in JavaScript. Provide examples for each. 
+
+
+<...
+
+1. Primitive Data Types
+   
+
+Primitive data types are the most basic data types in JavaScript. They include:    
+
+String: Represents a sequence of characters.
+javascript
+let name = "Alice";
+   
+
+Number: Represents both integer and floating-point numbers.
+javascript
+let age = 30;
+let height = 5.9; 
+   
+
+Boolean: Represents a logical entity and can have two values: true or false.
+javascript
+let isStudent = true;
+   
+
+Undefined: A variable that has been declared but has not yet been assigned a value.
+javascript
+let x;
+console.log(x); // Output: undefined
+   
+
+Null: Represents the intentional absence of any object value.
+javascript
+let y = null;
+
+<...

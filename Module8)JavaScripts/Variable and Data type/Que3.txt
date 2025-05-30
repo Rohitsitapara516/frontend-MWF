@@ -1,0 +1,20 @@
+ 3: What is the difference between undefined and null in JavaScript? 
+
+
+<...
+
+1.Undefined:
+A variable is undefined when it has been declared but has not been assigned a value. It is the default value of uninitialized variables.
+Example:
+javascript
+let x;
+console.log(x); // Output: undefined
+   
+
+2.Null:
+null is an intentional assignment of a variable to indicate that it has no value. It is an object type that represents the absence of any object value.
+Example:
+javascript
+let y = null;
+console.log(y);  
+   

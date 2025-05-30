@@ -1,0 +1,50 @@
+1: Explain the different types of loops in JavaScript (for, while, do-while). Provide abasic
+example of each.
+
+<...
+
+In JavaScript, loops are used to execute a block of code repeatedly based on a specified condition. There are several types of loops, but the most commonly used are for, while, and do-while loops. Each type of loop has its own syntax and use cases.
+
+1. For Loop
+The for loop is used when you know in advance how many times you want to execute a statement or a block of statements. It consists of three parts: initialization, condition, and increment/decrement.
+
+Syntax
+javascript
+3 lines
+Click to expand
+for (initialization; condition; increment/decrement) 
+
+
+javascript
+for (let i = 0; i < 5; i++) 
+console.log("Iteration: " + i);
+Explanation: This loop initializes i to 0, checks if i is less than 5, and increments i by 1 after each iteration. It will log the iteration number from 0 to 4.
+
+2. While Loop
+The while loop is used when you want to execute a block of code as long as a specified condition is true. The condition is evaluated before the execution of the loop's body.
+
+Syntax
+javascript
+while (condition) 
+...
+Example
+javascript
+let j = 0;
+while (j < 5) 
+
+Explanation: This loop initializes j to 0 and continues to execute as long as j is less than 5. It logs the iteration number from 0 to 4 and increments j by 1 in each iteration.
+
+3. Do-While Loop
+The do-while loop is similar to the while loop, but it guarantees that the block of code will be executed at least once, as the condition is evaluated after the execution of the loop's body.
+
+Syntax
+javascript
+do 
+...
+Example
+javascript
+let k = 0;
+do 
+...
+Explanation: This loop initializes k to 0 and executes the block of code at least once. It logs the iteration number from 0 to 4 and increments k by 1 in each iteration. The condition is checked after the block is executed.
+

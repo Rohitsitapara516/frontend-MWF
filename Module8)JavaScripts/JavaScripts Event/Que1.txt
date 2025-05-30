@@ -1,0 +1,16 @@
+1: What are JavaScript events? Explain the role of event listeners.
+
+<...In JavaScript, events are actions or occurrences that happen within a browser, such as a user clicking a button or a page finishing loading. Event listeners are JavaScript functions that are used to respond to these events, allowing you to execute code when a specific event occurs. 
+Role of Event Listeners:
+
+Detecting events:
+Event listeners monitor for specific events, like clicks, key presses, or page loads.
+
+Responding to events:
+When an event occurs, the corresponding event listener's associated function (the callback) is executed.
+
+Making websites interactive:
+By reacting to events, event listeners enable websites to respond dynamically to user actions, creating interactive and engaging experiences.
+
+Controlling browser behavior:
+Event listeners can be used to modify the way the browser handles certain actions, such as preventing form submissions or stopping default browser behavior 
