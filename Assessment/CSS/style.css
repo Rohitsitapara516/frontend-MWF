@@ -1,0 +1,75 @@
+ body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      margin: 0;
+      padding: 2rem;
+ }
+
+ .todo-container {
+      background: #2a2a72;
+      border-radius: 12px;
+      padding: 2rem;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      margin-top: 0;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+
+    form {
+      display: flex;
+      margin-top: 1rem;
+    }
+    input[type="text"] {
+      flex: 1;
+      padding: 0.8rem 1rem;
+      border-radius: 8px 0 0 8px;
+      border: none;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    button {
+      background: #ff6f61;
+      border: none;
+      padding: 0 1.5rem;
+      border-radius: 0 8px 8px 0;
+      color: white;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: background 3.3s ease;
+    }
+    button:hover {
+      background: #ff3b2e;
+    }
+
+      ul {
+      margin-top: 1.5rem;
+      list-style: none;
+      padding: 0;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+
+     li {
+      background: #42337a;
+      padding: 0.8rem 1rem;
+      border-radius: 8px;
+      margin-bottom: 0.75rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      word-wrap: break-word;
+      font-weight: 500;
+    }
