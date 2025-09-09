@@ -1,0 +1,25 @@
+ 2: Explain the concept of state in React and how it is used to manage componentdata data.
+
+ Concept of State in React
+State in React is a built-in object that stores data or information about the component. Unlike props, which are passed from parent to child and are immutable, state is mutable and managed within the component itself. State allows React components to create and manage dynamic and interactive user interfaces by tracking changes over time.
+
+How State Works
+State holds data that can change during the lifecycle of a component.
+When the state changes, React re-renders the component to reflect the updated data in the UI.
+State is local to the component and cannot be accessed or modified directly by other components.
+
+Using State in Class Components
+In class components, state is initialized in the constructor and updated using the setState() method.
+
+
+class Counter extends React.Component 
+
+
+constructor(props) 
+
+Using State in Functional Components (with Hooks)
+In functional components, the useState hook is used to add state.
+
+
+import React, { useState } from 'react';
+..

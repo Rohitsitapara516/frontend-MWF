@@ -1,0 +1,27 @@
+ 1: What are components in React? Explain the difference between functional
+components and class components.
+
+What are Components in React?
+Components are the fundamental building blocks of a React application. They are reusable, self-contained pieces of UI that define how a section of the interface should appear and behave. Each component can manage its own state and receive data via props (properties) from parent components.
+
+Components allow developers to break down complex UIs into smaller, manageable parts, making development, maintenance, and testing easier.
+
+
+Functional Components
+Definition: Functional components are simple JavaScript functions that return JSX (the UI elements).
+
+Syntax: They are written as plain functions.
+
+State and Lifecycle: Originally, functional components were stateless and did not have lifecycle methods. However, with the introduction of React Hooks (like useState and useEffect), functional components can now manage state and side effects.
+
+this Keyword: Functional components do not use the this keyword, making them easier to read and write.
+
+
+Class Components
+Definition: Class components are ES6 classes that extend React.Component.
+
+Syntax: They use class syntax and must include a render() method that returns JSX.
+
+State and Lifecycle: Class components have built-in support for state management (this.state) and lifecycle methods such as componentDidMount, componentDidUpdate, and componentWillUnmount.
+
+this Keyword: Class components use this to access props, state, and methods, which can sometimes lead to confusion and requires binding event handlers.

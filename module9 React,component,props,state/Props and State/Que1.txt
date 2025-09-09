@@ -1,0 +1,75 @@
+1: What are props in React.js? Inputs passed from a parent component to a child component
+
+Data managed within a component that can change over time
+
+Mutability
+
+Immutable (cannot be changed by the receiving component)
+
+Mutable (can be updated using setState or hooks)
+
+Ownership
+
+Owned and controlled by the parent component
+
+Owned and controlled by the component itself
+
+Purpose
+
+To pass data and configuration to child components
+
+To store and manage dynamic data that affects rendering
+
+Update
+
+Updated by the parent component re-rendering with new props
+
+Updated internally by the component via setState or hooks
+
+Usage
+
+Used to customize or configure components
+
+
+Props in React.js are short for "properties." They are read-only inputs passed from a parent component to a child component. Props allow components to be dynamic and reusable by passing data and event handlers down the component tree.
+
+
+Key characteristics of props:
+
+Passed from parent to child component.
+Immutable (cannot be changed by the receiving component).
+Used to configure or customize a component.
+Accessed via this.props in class components or directly as function arguments in functional components.
+
+
+Inputs passed from a parent component to a child component
+
+Data managed within a component that can change over time
+
+Mutability
+
+Immutable (cannot be changed by the receiving component)
+
+Mutable (can be updated using setState or hooks)
+
+Ownership
+
+Owned and controlled by the parent component
+
+Owned and controlled by the component itself
+
+Purpose
+
+To pass data and configuration to child components
+
+To store and manage dynamic data that affects rendering
+
+Update
+
+Updated by the parent component re-rendering with new props
+
+Updated internally by the component via setState or hooks
+
+Usage
+
+Used to customize or configure components

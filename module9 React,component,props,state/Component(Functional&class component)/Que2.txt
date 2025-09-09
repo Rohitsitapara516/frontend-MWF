@@ -1,0 +1,16 @@
+2: How do you pass data to a component using props?
+
+What are Props?
+Props (short for "properties") are a way to pass data from a parent component to a child component in React. Props are read-only and allow components to be dynamic and reusable.
+
+How to Pass Data Using Props
+Passing Props from Parent Component
+You pass data to a child component by adding attributes to the component tag in the parent’s JSX, where the attribute name is the prop name and the attribute value is the data you want to pass
+
+Accessing Props in the Child Component
+The child component receives the props as an object and can access the passed data via props.propName.
+
+Explanation
+The Parent component passes a prop named message with the value "Hello from Parent!" to the Child component.
+The Child component receives props as an argument and uses props.message to display the passed data.
+

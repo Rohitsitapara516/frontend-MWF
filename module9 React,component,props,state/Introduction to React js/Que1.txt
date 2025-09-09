@@ -1,0 +1,29 @@
+1: What is React.js? How is it different from other JavaScript frameworks and
+libraries?
+
+What is React.js?
+
+React.js is an open-source JavaScript library developed by Facebook for building user interfaces, particularly single-page applications where a dynamic and responsive user experience is required. It allows developers to create reusable UI components that manage their own state, and efficiently update and render just the right components when data changes.
+
+How is React.js different from other JavaScript frameworks and libraries?
+
+
+
+Library vs Framework:
+React is a library focused solely on the view layer (UI) of an application, unlike full-fledged frameworks like Angular or Vue.js, which provide more comprehensive solutions including routing, state management, and form handling.
+
+Component-Based Architecture:
+React encourages building encapsulated components that manage their own state and compose them to create complex UIs. This modular approach promotes reusability and easier maintenance.
+
+Virtual DOM:
+React uses a Virtual DOM to optimize rendering performance. Instead of manipulating the real DOM directly, React creates a lightweight copy (Virtual DOM), compares it with the previous version, and updates only the parts of the real DOM that have changed. This results in faster and more efficient UI updates.
+
+Unidirectional Data Flow:
+React enforces a one-way data flow, meaning data flows from parent components to child components. This makes the application’s data flow easier to understand and debug compared to two-way data binding used in some frameworks.
+
+JSX Syntax:
+React uses JSX, a syntax extension that allows writing HTML-like code within JavaScript. This makes the code more readable and easier to write, blending markup and logic in the same file.
+
+Ecosystem Flexibility:
+Since React focuses on the UI layer, developers can choose their own libraries for routing, state management (like Redux or MobX), and other functionalities, providing flexibility to tailor the stack to specific project needs.
+

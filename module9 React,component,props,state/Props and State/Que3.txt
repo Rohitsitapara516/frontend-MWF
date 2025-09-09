@@ -1,0 +1,9 @@
+3: Why is this.setState() used in class components, and how does it work?
+
+Concept of State in React
+State in React is a built-in object that stores data or information about the component. Unlike props, which are passed from parent to child and are immutable, state is mutable and managed within the component itself. State allows React components to create and manage dynamic and interactive user interfaces by tracking changes over time.
+
+How State Works
+State holds data that can change during the lifecycle of a component.
+When the state changes, React re-renders the component to reflect the updated data in the UI.
+State is local to the component and cannot be accessed or modified directly by other components.
