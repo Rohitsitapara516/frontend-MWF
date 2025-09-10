@@ -1,0 +1,23 @@
+2: Explain the difference between BrowserRouter, Route, Link, and Switch
+components in React Router.
+
+
+1. BrowserRouter
+Purpose: It is the top-level router component that uses the HTML5 History API (pushState, popstate, etc.) to keep the UI in sync with the URL.
+Role: Wraps your entire React application (or the part of it that needs routing) and enables clean URLs without hash fragments 
+
+
+2. Route
+Purpose: Defines a mapping between a URL path and a React component.
+Role: When the current URL matches the path prop of a <Route>, it renders the specified component.
+
+
+3. Link
+Purpose: Provides navigation links that update the URL without causing a full page reload.
+Role: Renders an anchor (<a>) tag that, when clicked, changes the URL and triggers React Router to render the matching route component.
+
+
+4. Switch (React Router v5) / Routes (React Router v6)
+Purpose: Renders the first child <Route> that matches the current URL.
+Role: Ensures that only one route is rendered at a time, preventing multiple routes from rendering simultaneously.
+

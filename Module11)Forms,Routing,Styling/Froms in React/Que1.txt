@@ -1,0 +1,19 @@
+1 : How do you handle forms in React? Explain the concept of controlled
+components.
+
+
+Controlled Components
+A controlled component is a form element whose value is controlled by React state. Instead of the form element maintaining its own internal state, the React component holds the state and updates it via event handlers.
+
+How Controlled Components Work
+State Initialization: You initialize a state variable to hold the form input value.
+Value Prop: You set the form element's value attribute to this state variable.
+Event Handler: You provide an onChange handler that updates the state whenever the user types or changes the input.
+React Controls the Input: Because the input's value is always driven by React state, React controls the form element.
+
+
+Why Use Controlled Components?
+Single Source of Truth: The React state is the single source of truth for the input value.
+Validation and Formatting: You can validate or format input as the user types.
+Conditional Rendering: You can enable/disable buttons or show error messages based on input state.
+Easier Debugging: Since React controls the form data, it's easier to track and debug.

@@ -1,0 +1,17 @@
+Why do you need to bind event handlers in class components?
+
+
+Why is binding necessary?
+In JavaScript, the value of this inside a function depends on how the function is called.
+When you pass a class method as an event handle the method is called without an explicit receiver, so this is undefined (in strict mode) or refers to the global object (in non-strict mode).
+React does not automatically bind class methods to the component instance.
+Without binding, inside the event handler, this will not refer to the component instance, so you cannot access this.state, this.props, or other instance methods.
+
+
+How to bind event handlers?
+
+1:Bind in the constructor
+
+2:Use arrow functions as class properties
+
+3:Use arrow functions inline in JSX

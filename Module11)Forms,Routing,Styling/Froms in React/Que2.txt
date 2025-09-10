@@ -1,0 +1,28 @@
+What is the difference between controlled and uncontrolled components in React?
+
+Controlled Components
+Definition: Form elements whose values are controlled by React state.
+Data Flow: The input value is stored in React state, and the UI reflects this state.
+How it works:
+The form element's value attribute is set to a state variable.
+An onChange handler updates the state when the user types.
+Advantages:
+Single source of truth (React state).
+Easy to validate, format, or manipulate input.
+Enables conditional rendering based on input.
+
+
+Uncontrolled Components
+Definition: Form elements that maintain their own internal state (like traditional HTML form elements).
+Data Flow: The input value is stored in the DOM, not in React state.
+How it works:
+You use a ref to access the input's current value when needed.
+React does not update the input value on every change.
+Advantages:
+Simpler to implement for simple forms.
+Less code for basic use cases.
+Disadvantages:
+Harder to validate or manipulate input in real-time.
+React does not control the input, so UI and state can get out of sync.
+
+
