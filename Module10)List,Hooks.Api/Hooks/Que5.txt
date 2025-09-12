@@ -1,0 +1,19 @@
+5: What’s the Difference between the useCallback & useMemo Hooks?
+
+
+1. useCallback
+
+Purpose: Memoizes a function.
+
+Prevents the function from being re-created on every render, unless dependencies change.
+
+Useful when passing functions as props to child components (to avoid unnecessary re-renders).
+
+
+2. useMemo
+
+Purpose: Memoizes a computed value (result).
+
+Prevents re-execution of an expensive calculation, unless dependencies change.
+
+Useful for optimizing performance in heavy computations or derived state.

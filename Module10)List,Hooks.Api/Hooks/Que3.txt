@@ -1,0 +1,20 @@
+3: What is useReducer ? How we use in react app?
+
+1. What is useReducer in React?
+
+useReducer is a React hook for managing complex state logic.
+
+It’s an alternative to useState, especially useful when:
+
+State has multiple sub-values
+
+State updates depend on previous state
+
+You want a centralized way to handle state transitions (like Redux but lighter).
+
+
+4. When to Use useReducer vs useState
+
+ Use useState → Simple state (like toggles, form fields, counters).
+
+ Use useReducer → Complex state with multiple values, or when actions describe what happened

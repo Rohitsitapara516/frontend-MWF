@@ -1,0 +1,67 @@
+2: What problems did hooks solve in React development? Why are hooks
+considered an important addition to React?
+
+
+1. Problems Before Hooks (Class Components Issues)
+
+Before hooks, we mainly used class components for state and lifecycle features. This led to several problems:
+
+ a) Complexity in stateful logic
+
+In class components, related logic was often split across different lifecycle methods (componentDidMount, componentDidUpdate, componentWillUnmount).
+
+Example: Fetching data required adding code in componentDidMount, cleaning up in componentWillUnmount, and sometimes updating in componentDidUpdate.
+This made components hard to read, maintain, and test.
+
+ b) Code reuse was difficult
+
+There was no clean way to share stateful logic between components.
+
+Developers had to rely on Higher Order Components (HOCs) or Render Props, which made the component tree deep and messy ("wrapper hell").
+
+ c) Classes were harder for beginners
+
+Understanding this, binding methods, and lifecycle methods confused many developers.
+
+Small mistakes with this often broke components.
+
+ d) Large components became hard to manage
+
+When components grew, logic became scattered across lifecycle methods.
+
+Refactoring or extracting logic was painful.
+
+2. How Hooks Solved These Problems
+ a) Simpler state management
+
+With useState, adding state is just a single line in a functional component.
+
+No need for constructors or this.setState.
+
+ b) Better code organization
+
+With useEffect, related logic (like fetching and cleaning up data) stays together instead of being split across lifecycle methods.
+
+ c) Code reuse with custom hooks
+
+Hooks let you create custom hooks (e.g., useFetch, useAuth) to share logic across components.
+
+No more HOCs or render props clutter.
+
+ d) Functional components are enough
+
+Hooks brought state and lifecycle features to functional components, so you don’t need classes anymore.
+
+This made React easier to learn and use.
+
+3. Why Hooks are an Important Addition to React
+
+Cleaner code → Functional components are simpler and easier to read.
+
+Reusability → Custom hooks let developers share logic without complex patterns.
+
+Easier learning curve → No need to understand this or lifecycle methods deeply.
+
+Better separation of concerns → Logic is grouped by purpose, not by lifecycle method.
+
+Future-proof → Most modern React features (like concurrent rendering and server components) are designed with hooks in mind.

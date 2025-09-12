@@ -1,0 +1,19 @@
+2: Explain how createContext() and useContext() are used in React for
+sharing state.
+
+1. createContext() in React
+
+createContext() is used to create a Context object.
+
+Think of it like making a "global container" where you can store data.
+
+This context can then be provided to components using a Provider.
+
+
+
+
+2. useContext() in React
+
+useContext() is a React hook that lets you consume (read) the context values in any component.
+
+Instead of passing props manually, you just use useContext(MyContext) to get the data.

@@ -1,0 +1,30 @@
+2: What are keys in React, and what happens if you do not provide a unique key?
+
+
+1. What are keys in React?
+
+Keys are special props you pass to elements in a list.
+
+They are used internally by React to track which items in a list have changed, been added, or removed.
+
+They help React’s reconciliation algorithm decide how to efficiently update the DOM.
+
+
+
+2. What happens if you do NOT provide a unique key?
+
+If you don’t provide keys (or provide non-unique ones):
+
+React will fall back to using array indexes as keys.
+
+This can cause inefficient re-renders because React can’t tell which item actually changed.
+
+In dynamic lists (items added/removed/reordered), it can lead to UI bugs such as:
+
+Incorrectly reusing DOM elements
+
+Losing component state (e.g., input fields losing typed text)
+
+Wrong animations/transitions being applied
+
+

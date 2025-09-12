@@ -1,0 +1,30 @@
+1: What are React hooks? How do useState() and useEffect() hooks work in
+functional components?
+
+
+1. What are React Hooks?
+
+Hooks are special functions introduced in React 16.8 that let you use state and other React features in functional components (without needing class components).
+
+They start with the word use (e.g., useState, useEffect, useContext).
+
+Hooks make functional components more powerful and easier to read.
+
+2. The useState() Hook
+
+useState lets you add state (data that can change) to a functional component.
+
+It returns an array with two values:
+
+The current state value
+
+A function to update that value
+
+
+3. The useEffect() Hook
+
+useEffect lets you perform side effects in functional components.
+
+Side effects = things that affect the outside world, e.g., fetching data, updating the DOM, timers, logging.
+
+It runs after the component renders.
