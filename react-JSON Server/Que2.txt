@@ -1,0 +1,53 @@
+ 2: What is Json-Server? How we use in React ?
+
+ What is JSON Server?
+JSON Server is a simple, full fake REST API that you can use to quickly set up a mock backend for prototyping and testing front-end applications. It allows you to create a RESTful API with zero coding by using a simple JSON file as your database.
+
+
+
+
+How to Use JSON Server in React
+Step 1: Install JSON Server
+First, you need to install JSON Server globally or locally in your project.
+
+To install globally (so you can run it from anywhere):
+bash
+
+
+npm install -g json-server
+Or install it as a dev dependency in your React project:
+bash
+
+
+npm install --save-dev json-server
+Step 2: Create a db.json File
+Create a file named db.json in your project root folder. This file will act as your fake database.
+
+Example content of db.json:
+
+
+{
+"posts": [
+...
+Step 3: Start JSON Server
+Run the following command in your terminal to start the JSON Server and watch the db.json file:
+
+
+json-server --watch db.json --port 3001
+This will start a REST API server at http://localhost:3001.
+The --port 3001 option is used to avoid conflict if your React app runs on port 3000.
+Step 4: Fetch Data in React
+In your React app, you can now fetch data from the JSON Server API endpoints.
+
+Example React component to fetch and display posts:
+
+import React, { useEffect, useState } from 'react';
+...
+Step 5: Perform CRUD Operations
+You can also perform Create, Update, and Delete operations by sending POST, PUT, PATCH, and DELETE requests to the JSON Server endpoints.
+
+Example: Adding a new post (POST request)
+
+function addPost() 
+fetch('http://localhost:3001/posts'), 
+...
