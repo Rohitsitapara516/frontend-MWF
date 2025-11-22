@@ -1,0 +1,147 @@
+{
+  "addcategory": [],
+  "addsubcategory": [
+    {
+      "id": "fe8d",
+      "categoryname": "chiku",
+      "subcategoryname": "",
+      "added_date": ""
+    },
+    {
+      "id": "e5ce",
+      "categoryname": "chiku",
+      "subcategoryname": "all",
+      "added_date": "2025-11-13"
+    },
+    {
+      "id": "ec52",
+      "categoryname": "kela",
+      "subcategoryname": "kela",
+      "added_date": "2025-11-25"
+    }
+  ],
+  "addproducts": [
+    {
+      "productname": "T-shirt",
+      "oldprice": "345",
+      "offerprice": "120",
+      "qty": "1",
+      "added_date": "18",
+      "id": "7e3d"
+    },
+    {
+      "id": "8175",
+      "productname": "t-shirt",
+      "oldprice": "780",
+      "offerprice": "420",
+      "qty": "2",
+      "description": "high-level t-shirt",
+      "added_date": "18"
+    },
+    {
+      "id": "4e39",
+      "productname": "black-t-shirt",
+      "oldprice": "450",
+      "offerprice": "210",
+      "qty": "1",
+      "description": "hii",
+      "added_date": "19"
+    },
+    {
+      "id": "2037",
+      "productname": "polo-t-shirt",
+      "oldprice": "4500",
+      "offerprice": "3500",
+      "qty": "2",
+      "description": "hii",
+      "added_date": "20"
+    }
+  ],
+  "cart": [
+    {
+      "id": "0373",
+      "image": "kela",
+      "productname": "banana",
+      "oldprice": "45",
+      "offerprice1": "10",
+      "offerprice2": "10",
+      "qty": "10",
+      "descriptions": "undefined"
+    },
+    {
+      "id": "771f",
+      "image": "",
+      "productname": "",
+      "oldprice": "",
+      "offerprice1": "",
+      "offerprice2": "",
+      "qty": "1",
+      "descriptions": ""
+    },
+    {
+      "id": "d55b",
+      "image": "undefined",
+      "productname": "t-shirt",
+      "oldprice": "780",
+      "offerprice1": "420",
+      "offerprice2": "420",
+      "qty": "2",
+      "descriptions": "undefined"
+    },
+    {
+      "id": "576f",
+      "image": "undefined",
+      "productname": "t-shirt",
+      "oldprice": "780",
+      "offerprice1": "420",
+      "offerprice2": "420",
+      "qty": "2",
+      "descriptions": "undefined"
+    },
+    {
+      "id": "350b",
+      "image": "undefined",
+      "productname": "t-shirt",
+      "oldprice": "780",
+      "offerprice1": "420",
+      "offerprice2": "420",
+      "qty": "2",
+      "descriptions": "undefined"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "ae20",
+      "firstname": "rohit",
+      "lastname": "sitapara",
+      "email": "rohitsitapara9525@gmail.com",
+      "phone": "9512579560",
+      "subject": "react ja",
+      "message": "hh"
+    },
+    {
+      "id": "3f85",
+      "firstname": "rohit",
+      "lastname": "sitapara",
+      "email": "rohitsitapara9525@gmail.com",
+      "password": "sweta95125",
+      "confirmpassword": "sweta95125"
+    }
+  ],
+  "feedbacks": [],
+  "register": [
+    {
+      "id": "3a49",
+      "firstname": "rohit",
+      "lastname": "sitapara",
+      "email": "rohitsitapara9525@gmail.com",
+      "password": "sweta95125",
+      "confirmpassword": "sweta95125"
+    }
+  ],
+  "reviews": [],
+  "checkout": [],
+  "addsliders": [],
+  "customers": [],
+  "blogs": []
+}
