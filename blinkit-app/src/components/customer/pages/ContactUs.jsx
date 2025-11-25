@@ -1,0 +1,133 @@
+import React, { useRef, useState } from "react";
+import emailjs from '@emailjs/browser'
+import Swal from "sweetalert2";
+import axios from "axios";
+import Header from "../Header";
+import Navigation from "../Navigation";
+import PageBanner from "./PageBanner";
+import Footer from "../Footer";
+import { useNavigate } from "react-router-dom";
+
+
+export default function(){
+
+
+
+      
+    const [data, setData]=useState("")
+
+    const name=useRef("");
+    const email=useRef("");
+    const phone=useRef("");
+    const subject=useRef("");
+    const message=useRef("");
+    const navigate=useNavigate();
+
+
+
+
+    const handleSubmit=async(e) =>{
+       e.preventDefault()   
+
+        var insert={
+            name:name.current.value,
+            email:email.current.value,
+            phone:phone.current.value,
+            subject:subject.current.value,
+            message:message.current.value,
+        }
+
+        try{
+
+            axios.post(`http://localhost:8000/contact`,insert).then((res)=>{
+                console.log(res);
+                setData(res.data);
+
+              
+        Swal.fire({
+        title: 'Success!',
+        text: 'Contact submitted successfully',
+        icon: 'success',
+        confirmButtonText: 'OK'
+   
+
+           })
+         })
+
+    
+            
+            e.target.reset();
+            navigate("/")
+        }
+
+        catch(err)
+        {
+            console.log(err)
+            alert("Form submission faild");
+        }
+        
+    }
+
+    
+
+
+
+       
+
+
+
+   
+
+    return(
+        <>
+        <Header />
+        <Navigation />
+
+        <PageBanner />
+
+        <section id='content' className='container mx-auto mt-16'>
+        <h1 className='animate-pulse text-8xl text-center font-mono text-red-300'>Contact us</h1>
+        <hr className='w-96 mx-auto border-1'/>
+
+         <div className='contact-us flex flex-row mt-10' data-aos="fade-up" data-aos-duration="2000">
+            <div className='address p-16 w-1/2'>
+            <h1 className='text-5xl'>Get in Touch With us</h1>
+            <hr className='border-1 w-110'/>
+            <p className='mt-16'><b>Address :</b>Ground Floor, Pioneer Square, Sector 62, Golf Course Extension Road, Gurugram-122098, Haryana, India</p>
+            <p className='mt-3'><b>Registered Office :</b>Ground Floor, Tower A, Pioneer Square Building, Golf Course Extension Road, Sector 62, Gurugram-122098, Haryana.</p>
+            <p className='mt-3'><b>Cin :</b>U52609UP2021PTC157461</p>
+            <p className='mt-3'><b>Email us :</b><a href='mailto:blinkit2021@gmail.com'>blinkit2021@gmail.com</a></p>
+            <p className='mt-3'>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59075.463026054276!2d70.68915472167966!3d22.269789600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cb000e507455%3A0xf0cd3e17d20e1b1e!2sBlinkit%20store!5e0!3m2!1sen!2sin!4v1743395044069!5m2!1sen!2sin" width="100%" height="250" style={{border:0}} allowFullscreen="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </p>
+            </div>
+
+            <div className='contact-form w-1/2  p-16'>
+            <form className='mt-16' onSubmit={handleSubmit}>
+             <input type='text' placeholder='Name *' ref={name} className='mt-3 border-b-1 w-full' />
+             <input type='text' placeholder='Email *' ref={email} className='mt-10 border-b-1 w-full' />
+             <input type='text' placeholder='Phone *' ref={phone} className='mt-10 border-b-1 w-full' />
+             <input type='text' placeholder='Subject *' ref={subject} className='mt-10 border-b-1 w-full' />
+             <textarea type='text' placeholder='Message' ref={message} className='mt-10 border-b-1  w-full h-25'></textarea>
+             <input type='submit' placeholder='Name *' className='mt-3 border-0 bg-black w-50 p-3 text-white text-xl' value="Send" />
+            <input type='reset' placeholder='Name *' className='mt-3 border-0 bg-black w-50 p-3 text-white text-xl
+            ' value="Reset" />
+            </form>
+            </div>
+        </div>
+
+        <div className='help-task mt-16 w-full text-center' data-aos="fade-up" data-aos-duration="2000"> 
+            <h1 className='text-5xl' text-center font-mono>Any help contact with us</h1>
+             <hr className='w-128 mx-auto border-1' />
+             <div className='w-1/2 p-5 mt-5 mx-auto '>
+            <p className='text-center'><img src='https://media0.giphy.com/media/lebpnk3qVPAjBxIKKc/giphy.gif?cid=6c09b952gnsx8cn97w1jl5oewe3ieu10i72l3ek9igb7agow&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g' alt='help' /></p>
+            <p className='text-center animate-bounce text-4xl mt-3'>Call Us : <span className='bi bi-telephone'></span> (+91)-1800-3500-180</p>
+
+             </div>
+        </div>
+  
+        </section>
+        <Footer />
+        </>
+    )
+}

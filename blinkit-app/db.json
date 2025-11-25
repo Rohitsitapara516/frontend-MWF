@@ -1,0 +1,168 @@
+{
+  "cart": [],
+  "contact": [
+    {
+      "id": "098d",
+      "name": "rohit",
+      "email": "rohit@gmail.com",
+      "phone": "9512579560",
+      "subject": "feedback",
+      "message": "inquiry"
+    },
+    {
+      "id": "1839",
+      "name": "tejas"
+    },
+    {
+      "id": "cbfb",
+      "name": "sweta"
+    },
+    {
+      "id": "ebae",
+      "name": "hello"
+    },
+    {
+      "id": "d379",
+      "name": "tejas",
+      "email": "tejas@gmai.com",
+      "phone": "9512579560",
+      "subject": "hi",
+      "message": "hello"
+    },
+    {
+      "id": "18e9",
+      "name": "rajveer",
+      "email": "rajveer@gmail.com",
+      "phone": "9512579560",
+      "subject": "hi",
+      "message": "hello"
+    },
+    {
+      "id": "6529",
+      "name": "sweta",
+      "email": "sweta@gmail.com",
+      "phone": "9099581733",
+      "subject": "hi",
+      "message": "hello"
+    },
+    {
+      "id": "8619",
+      "name": "divya",
+      "email": "divya@gmail.com",
+      "phone": "9090589560",
+      "subject": "name chane",
+      "message": "GHHH"
+    },
+    {
+      "id": "11ed",
+      "name": "devangi",
+      "email": "devangi@gmail.com",
+      "phone": "9512547896",
+      "subject": "hi",
+      "message": "hello"
+    },
+    {
+      "id": "cbda",
+      "name": "angel",
+      "email": "angel@gmail.com",
+      "phone": "9512579560",
+      "subject": "gi",
+      "message": "hello"
+    },
+    {
+      "id": "c3d4",
+      "name": "rohit1",
+      "email": "rohit1@gmail.com",
+      "phone": "9512579560",
+      "subject": "hi",
+      "message": "hello"
+    },
+    {
+      "id": "587c",
+      "name": "rohit123",
+      "email": "rohit123@gmail.com",
+      "phone": "9512579560",
+      "subject": "hi",
+      "message": "hello"
+    },
+    {
+      "id": "3b37",
+      "name": "rohit sitapara",
+      "email": "rohitsitapara516@gmail.com",
+      "phone": "9512579560",
+      "subject": "Rohit subject",
+      "message": "hi"
+    },
+    {
+      "id": "d428",
+      "name": "omakar",
+      "email": "omakarfashion95@gmail.com",
+      "phone": "9099581733",
+      "subject": "hi",
+      "message": "hello"
+    },
+    {
+      "id": "2d99",
+      "name": "omkar",
+      "email": "omkarfashion95@gmail.com",
+      "phone": "9512579560",
+      "subject": "hello",
+      "message": "hi"
+    },
+    {
+      "id": "07d9",
+      "name": "rohit",
+      "email": "rohitsitapara516@gmail.com",
+      "phone": "9512579560",
+      "subject": "hi",
+      "message": "hello"
+    },
+    {
+      "id": "a903",
+      "name": "Rohit",
+      "email": "rohitsitapara516@gmail.com",
+      "phone": "9512579560",
+      "subject": "hii",
+      "message": "hello"
+    }
+  ],
+  "register": [
+    {
+      "id": "d28f",
+      "name": "Sign In",
+      "email": "rohit@gmai.com",
+      "phone": "9512579560",
+      "password": "sweta123",
+      "pincode": "360311",
+      "confirmedpassword": "sweta123"
+    },
+    {
+      "id": "d14b",
+      "name": "sing in",
+      "email": "rohit@gmail.com",
+      "password": "rohit123"
+    },
+    {
+      "id": "a8d3",
+      "email": "tejas@gmail.com",
+      "password": "tejas123"
+    },
+    {
+      "id": "437a",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "47c1",
+      "email": "",
+      "password": ""
+    }
+  ],
+  "forget-password": [
+    {
+      "id": "ddf5",
+      "name": "Submit",
+      "email": "divya@gmail.com"
+    }
+  ]
+}
